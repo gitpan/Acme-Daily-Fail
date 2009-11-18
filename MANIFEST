@@ -21,3 +21,4 @@ t/00_compile.t
 t/01_getheadline.t
 t/99_pod.t
 t/99_pod_coverage.t
+tools/git-log.pl

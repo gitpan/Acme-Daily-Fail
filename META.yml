@@ -22,7 +22,7 @@ no_index:
 provides:
   Acme::Daily::Fail:
     file: lib/Acme/Daily/Fail.pm
-    version: 1.00
+    version: 1.02
 requires:
   Math::Random: 0.69
   constant: 0
@@ -31,4 +31,4 @@ resources:
   homepage: http://github.com/bingos/acme-daily-fail/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/acme-daily-fail.git
-version: 1.00
+version: 1.02
