@@ -1,0 +1,41 @@
+{
+   "abstract" : "generate random newspaper headlines",
+   "author" : [
+      "Chris Williams <chris@bingosnet.co.uk>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.102400",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Acme-Daily-Fail",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Math::Random" : "0.69",
+            "constant" : 0,
+            "perl" : "v5.6.0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://github.com/bingos/acme-daily-fail/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/bingos/acme-daily-fail.git",
+         "web" : "http://github.com/bingos/acme-daily-fail/tree"
+      }
+   },
+   "version" : "1.06"
+}
+

@@ -1,10 +1,13 @@
 package Acme::Daily::Fail;
+BEGIN {
+  $Acme::Daily::Fail::VERSION = '1.06';
+}
+
+#ABSTRACT: generate random newspaper headlines
 
 use strict;
 use warnings;
 use Math::Random;
-
-our $VERSION = '1.04';
 
 our @ISA            = qw[Exporter];
 our @EXPORT_OK      = qw[get_headline];
@@ -70,7 +73,7 @@ my $subjects = [
 	["single mothers",3,2],
 	["paedophiles",3,2],
 	["gordon brown",3,1],
-	["alistair darling",3,1],
+	["george osbourne",3,1],
 	["jacqui smith",3,1],	
 	["russell brand",3,1],     # FIXME: Delete when latest moral panic is over
 	["teenage sex",3,1],
@@ -88,7 +91,8 @@ my $subjects = [
 	["cancer",3,1],               # Could cancer give you cancer?
 	["binge drinking",3,1],
 	["the house price crash",3,1],# Hahahaha
-	["jihadists",3,1]             # Topical
+	["jihadists",3,1],             # Topical
+	["x factor",3,1]             # Topical
 ];
 
 # Transitive phrases (i.e. bad thing they do)
@@ -205,11 +209,17 @@ sub get_headline {
 
 qq[BLOODY IMMIGRANTS];
 
+
 __END__
+=pod
 
 =head1 NAME
 
 Acme::Daily::Fail - generate random newspaper headlines
+
+=head1 VERSION
+
+version 1.06
 
 =head1 SYNOPSIS
 
@@ -225,6 +235,8 @@ Acme::Daily::Fail - generate random newspaper headlines
 Acme::Daily::Fail provides a single function that when called generates a 
 random newspaper headline which is typical for a certain UK newspaper title.
 
+=head1 NAME
+
 =head1 FUNCTION
 
 =over
@@ -235,21 +247,25 @@ Not exported by default, takes no parameters, returns a randomly generated headl
 
 =back
 
-=head1 AUTHOR
+=head1 BASED ON
 
-Chris C<BinGOs> Williams <chris@bingosnet.co.uk>
-
-based on the Daily-Mail-o-matic by Chris Applegate
+Based on the Daily-Mail-o-matic by Chris Applegate
 L<http://www.qwghlm.co.uk/toys/dailymail/>
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Applegate and Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
 =head1 SEE ALSO
 
 L<http://www.qwghlm.co.uk/toys/dailymail/>
 
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2010 by Chris Applegate and Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+

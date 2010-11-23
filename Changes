@@ -1,0 +1,55 @@
+==============================
+2010-11-23 00:30:43 +0000 1.06
+==============================
+
+  commit c25e198d74894a8d15fd6b62e087779e0184525b
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Nov 23 00:30:43 2010 +0000
+  
+    Switch to dzil and add some entries 
+
+==============================
+2010-11-05 12:42:55 +0000 1.04
+==============================
+
+  commit 45f951680d9186a09d56b2215cb7c2c3e5021764
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Nov 5 12:42:55 2010 +0000
+  
+    Fixes
+
+  commit 568a72cc8d5b8a75067614350ccfe73a776d6add
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Nov 5 12:40:48 2010 +0000
+  
+    Added new subject 
+
+==============================
+2009-11-18 16:16:07 +0000 1.02
+==============================
+
+  commit 665eb63178b2a70b68ac39f9a71edf5b592d8171
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date:   Wed Nov 18 16:16:07 2009 +0000
+  
+    Fix the &amp string in Health and Safety
+
+  commit 684f1aad7cc0170308bcdd53b1d11f37a710d4b9
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date:   Tue Nov 17 16:28:53 2009 +0000
+  
+    Various updates 
+
+==============================
+2009-11-17 16:25:56 +0000 1.00
+==============================
+
+  commit 9d0d71065fedc90701868be4e93294060c66f0a4
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date:   Tue Nov 17 16:25:56 2009 +0000
+  
+    Release tools 
+
+====================================
+End of changes in the last 1825 days
+====================================
