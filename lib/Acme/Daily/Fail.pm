@@ -1,5 +1,5 @@
 package Acme::Daily::Fail;
-$Acme::Daily::Fail::VERSION = '1.08';
+$Acme::Daily::Fail::VERSION = '1.10';
 #ABSTRACT: generate random newspaper headlines
 
 use strict;
@@ -89,7 +89,10 @@ my $subjects = [
 	["binge drinking",3,1],
 	["the house price crash",3,1],# Hahahaha
 	["jihadists",3,1],             # Topical
-	["x factor",3,1]             # Topical
+	["x factor",3,1],             # Topical
+	["foxes",3,2],
+	["twitter",3,1],            # Topical
+	["the mmr jab",3,1],             # Topical
 ];
 
 # Transitive phrases (i.e. bad thing they do)
@@ -218,7 +221,7 @@ Acme::Daily::Fail - generate random newspaper headlines
 
 =head1 VERSION
 
-version 1.08
+version 1.10
 
 =head1 SYNOPSIS
 
