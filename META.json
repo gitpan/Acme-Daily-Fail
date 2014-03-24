@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 5.014, CPAN::Meta::Converter version 2.140640",
    "license" : [
       "perl_5"
    ],
@@ -16,26 +16,41 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08"
          }
       },
       "runtime" : {
          "requires" : {
             "Math::Random" : "0.69",
-            "constant" : 0,
+            "constant" : "0",
             "perl" : "v5.6.0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Test::More" : "0"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/bingos/acme-daily-fail/tree",
+      "homepage" : "https://github.com/bingos/acme-daily-fail",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/bingos/acme-daily-fail.git",
-         "web" : "http://github.com/bingos/acme-daily-fail/tree"
+         "url" : "https://github.com/bingos/acme-daily-fail.git",
+         "web" : "https://github.com/bingos/acme-daily-fail"
       }
    },
-   "version" : "1.06"
+   "version" : "1.08"
 }
 

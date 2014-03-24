@@ -1,8 +1,5 @@
 package Acme::Daily::Fail;
-BEGIN {
-  $Acme::Daily::Fail::VERSION = '1.06';
-}
-
+$Acme::Daily::Fail::VERSION = '1.08';
 #ABSTRACT: generate random newspaper headlines
 
 use strict;
@@ -74,7 +71,7 @@ my $subjects = [
 	["paedophiles",3,2],
 	["gordon brown",3,1],
 	["george osbourne",3,1],
-	["jacqui smith",3,1],	
+	["jacqui smith",3,1],
 	["russell brand",3,1],     # FIXME: Delete when latest moral panic is over
 	["teenage sex",3,1],
 	["political correctness",3,1],
@@ -117,7 +114,7 @@ my $transitive_phrases = [
 	["molest","molested","molesting",""],
 	["have sex with","had sex with","having sex with",""],
 	["impregnate", "impregnated", "impregnating", ""],
-	["steal the identity of","stolen the identity of","stealing the identity of",""],	
+	["steal the identity of","stolen the identity of","stealing the identity of",""],
 	["destroy","destroyed","destroying",""],
 	["kill","killed", "killing",""],
 	["ruin","ruined","ruining",""],
@@ -162,7 +159,7 @@ my $objects = [
 # Matches an auxiliary verb with the subject
 sub _match_verb_and_subject {
   my ($subject,$verb) = @_;
-  
+
 	if ($subject->[NUMBER] == 1 && $subject->[PERSON] == 3) {
 		 return $verb->[SINGULAR];
 	}
@@ -209,9 +206,11 @@ sub get_headline {
 
 qq[BLOODY IMMIGRANTS];
 
-
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -219,7 +218,7 @@ Acme::Daily::Fail - generate random newspaper headlines
 
 =head1 VERSION
 
-version 1.06
+version 1.08
 
 =head1 SYNOPSIS
 
@@ -232,7 +231,7 @@ version 1.06
 
 =head1 DESCRIPTION
 
-Acme::Daily::Fail provides a single function that when called generates a 
+Acme::Daily::Fail provides a single function that when called generates a
 random newspaper headline which is typical for a certain UK newspaper title.
 
 =head1 NAME
@@ -262,10 +261,9 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Chris Applegate and Chris Williams.
+This software is copyright (c) 2014 by Chris Applegate and Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
